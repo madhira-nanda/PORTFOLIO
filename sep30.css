@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: 'Instrument Sans', Arial, sans-serif;
+  background-color: #0b0f19;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Bricolage Grotesque', Arial, sans-serif;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+section h2 {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+p {
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #00f2fe;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+a:focus-visible {
+  outline: 2px solid #00f2fe;
+  outline-offset: 4px;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 5%;
+  background-color: #0b0f19;
+  border-bottom: 1px solid #333333;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.brand-accent {
+  color: #00f2fe;
+}
+
+.nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 20px;
+}
+
+.nav nav a {
+  color: #94a3b8;
+}
+
+.nav nav a:hover {
+  color: #ffffff;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  padding: 50px 0;
+  border-top: 1px solid #333333;
+}
+
+.hero {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.hero-text {
+  flex: 3;
+  min-width: 0;
+}
+
+.hello {
+  font-size: 14px;
+  font-weight: bold;
+  color: #00f2fe;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.15;
+  color: #00f2fe;
+}
+
+.role {
+  font-size: 18px;
+  color: #94a3b8;
+}
+
+.hero-card, .about-card {
+  background-color: #151d2e;
+  border: 1px solid #333333;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.hero-card {
+  flex: 2;
+  min-width: 0;
+}
+
+.hero-card h2 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.hero-card p {
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.status-badge {
+  font-size: 12px;
+  font-weight: bold;
+  color: #10b981;
+  margin-bottom: 10px;
+}
+
+.pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #333333;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn.primary {
+  background-color: #00f2fe;
+  color: #000000;
+  border: 1px solid #00f2fe;
+}
+
+.btn.primary:hover {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+
+.timeline {
+  list-style: none;
+  border-left: 2px solid #333333;
+  padding-left: 20px;
+}
+
+.timeline li {
+  margin-bottom: 30px;
+}
+
+.timeline-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 12px;
+  background-color: #00f2fe;
+  color: #000000;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.timeline h3 {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.timeline .institution {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.timeline .desc {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills li {
+  padding: 10px 20px;
+  background-color: #151d2e;
+  border: 1px solid #333333;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.skills li:hover {
+  border-color: #00f2fe;
+}
+
+.contact {
+  list-style: none;
+}
+
+.contact li {
+  display: flex;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #333333;
+}
+
+.contact span {
+  flex: 0 0 80px;
+  font-weight: bold;
+  color: #94a3b8;
+}
+
+.contact a {
+  overflow-wrap: anywhere;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #333333;
+  color: #94a3b8;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero h1 {
+    font-size: clamp(32px, 8vw, 48px);
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
